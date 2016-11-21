@@ -39,6 +39,11 @@
 		3546F3791DE36AF9005702EE /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546F3771DE36AF9005702EE /* Chord.swift */; };
 		3546F37B1DE36B8B005702EE /* String+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546F37A1DE36B8B005702EE /* String+Parser.swift */; };
 		3546F37C1DE36B8B005702EE /* String+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546F37A1DE36B8B005702EE /* String+Parser.swift */; };
+		3546F3841DE36D69005702EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546F3831DE36D69005702EE /* AppDelegate.swift */; };
+		3546F3861DE36D69005702EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546F3851DE36D69005702EE /* ViewController.swift */; };
+		3546F38B1DE36D69005702EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3546F38A1DE36D69005702EE /* Assets.xcassets */; };
+		3546F38E1DE36D69005702EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3546F38C1DE36D69005702EE /* LaunchScreen.storyboard */; };
+		3546F3931DE36EC9005702EE /* ChordKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD97D2E31DE349F4001703A9 /* ChordKit.framework */; };
 		AD97D2ED1DE349F4001703A9 /* ChordKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD97D2E31DE349F4001703A9 /* ChordKit.framework */; };
 		AD97D2F21DE349F4001703A9 /* ChordKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD97D2F11DE349F4001703A9 /* ChordKitTests.swift */; };
 		AD97D2F41DE349F4001703A9 /* ChordKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AD97D2E61DE349F4001703A9 /* ChordKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -84,6 +89,12 @@
 		3546F3741DE36AA4005702EE /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Note.swift; path = Common/Note.swift; sourceTree = "<group>"; };
 		3546F3771DE36AF9005702EE /* Chord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chord.swift; path = Common/SVG/Chord.swift; sourceTree = "<group>"; };
 		3546F37A1DE36B8B005702EE /* String+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Parser.swift"; path = "Common/Extensions/String+Parser.swift"; sourceTree = "<group>"; };
+		3546F3811DE36D69005702EE /* Chords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3546F3831DE36D69005702EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3546F3851DE36D69005702EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3546F38A1DE36D69005702EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3546F38D1DE36D69005702EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3546F38F1DE36D69005702EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD97D2E31DE349F4001703A9 /* ChordKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChordKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD97D2E61DE349F4001703A9 /* ChordKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChordKit.h; sourceTree = "<group>"; };
 		AD97D2E71DE349F4001703A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +106,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3546F37E1DE36D69005702EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3546F3931DE36EC9005702EE /* ChordKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD97D2DF1DE349F4001703A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,6 +163,18 @@
 			name = SVG;
 			sourceTree = "<group>";
 		};
+		3546F3821DE36D69005702EE /* Chords */ = {
+			isa = PBXGroup;
+			children = (
+				3546F38A1DE36D69005702EE /* Assets.xcassets */,
+				3546F38C1DE36D69005702EE /* LaunchScreen.storyboard */,
+				3546F38F1DE36D69005702EE /* Info.plist */,
+				3546F3831DE36D69005702EE /* AppDelegate.swift */,
+				3546F3851DE36D69005702EE /* ViewController.swift */,
+			);
+			path = Chords;
+			sourceTree = "<group>";
+		};
 		AD97D2D91DE349F4001703A9 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +182,7 @@
 				AD97D2E51DE349F4001703A9 /* ChordKit */,
 				AD97D2F01DE349F4001703A9 /* ChordKitTests */,
 				AD97D3031DE34A33001703A9 /* Chord */,
+				3546F3821DE36D69005702EE /* Chords */,
 				AD97D2E41DE349F4001703A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -161,6 +193,7 @@
 				AD97D2E31DE349F4001703A9 /* ChordKit.framework */,
 				AD97D2EC1DE349F4001703A9 /* ChordKitTests.xctest */,
 				AD97D3021DE34A33001703A9 /* Chord */,
+				3546F3811DE36D69005702EE /* Chords.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +253,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3546F3801DE36D69005702EE /* Chords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3546F3901DE36D69005702EE /* Build configuration list for PBXNativeTarget "Chords" */;
+			buildPhases = (
+				3546F37D1DE36D69005702EE /* Sources */,
+				3546F37E1DE36D69005702EE /* Frameworks */,
+				3546F37F1DE36D69005702EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chords;
+			productName = Chords;
+			productReference = 3546F3811DE36D69005702EE /* Chords.app */;
+			productType = "com.apple.product-type.application";
+		};
 		AD97D2E21DE349F4001703A9 /* ChordKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD97D2F71DE349F4001703A9 /* Build configuration list for PBXNativeTarget "ChordKit" */;
@@ -283,6 +333,10 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = cargath;
 				TargetAttributes = {
+					3546F3801DE36D69005702EE = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					AD97D2E21DE349F4001703A9 = {
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 0810;
@@ -304,6 +358,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = AD97D2D91DE349F4001703A9;
 			productRefGroup = AD97D2E41DE349F4001703A9 /* Products */;
@@ -313,11 +368,21 @@
 				AD97D2E21DE349F4001703A9 /* ChordKit */,
 				AD97D2EB1DE349F4001703A9 /* ChordKitTests */,
 				AD97D3011DE34A33001703A9 /* Chord */,
+				3546F3801DE36D69005702EE /* Chords */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3546F37F1DE36D69005702EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3546F38E1DE36D69005702EE /* LaunchScreen.storyboard in Resources */,
+				3546F38B1DE36D69005702EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD97D2E11DE349F4001703A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +400,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3546F37D1DE36D69005702EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3546F3861DE36D69005702EE /* ViewController.swift in Sources */,
+				3546F3841DE36D69005702EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD97D2DE1DE349F4001703A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,7 +474,46 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		3546F38C1DE36D69005702EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3546F38D1DE36D69005702EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		3546F3911DE36D69005702EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Chords/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.cargath.Chords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3546F3921DE36D69005702EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Chords/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.cargath.Chords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		AD97D2F51DE349F4001703A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -590,6 +703,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3546F3901DE36D69005702EE /* Build configuration list for PBXNativeTarget "Chords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3546F3911DE36D69005702EE /* Debug */,
+				3546F3921DE36D69005702EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AD97D2DD1DE349F4001703A9 /* Build configuration list for PBXProject "ChordKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

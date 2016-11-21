@@ -10,8 +10,8 @@ import Foundation
 
 public class ChordKit {
 
-    public class func hello() {
-        print("Hello, world!")
+    public class var hello: String {
+        return "Hello, world!"
     }
 
 }
