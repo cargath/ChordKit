@@ -23,7 +23,7 @@ public struct SVG {
 extension SVG: Shape {
 
     public var xml: String {
-        return "<svg width=\"\(width)\" height=\"\(height)\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\">><rect x=\"0\" y=\"0\" width=\"\(width)\" height=\"\(height)\" fill=\"gray\" />"
+        return "<svg width=\"\(width)\" height=\"\(height)\">"
     }
     
 }

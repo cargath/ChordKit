@@ -51,7 +51,7 @@ public struct Chord {
 
 public extension Chord {
 
-    public func shapes(scale: Int = 20) -> [Shape] {
+    public func shapes(scale: Int = 20, strokeWidth: Int = 4) -> [Shape] {
 
         let colWidth = 3 * scale
         let rowHeight = 4 * scale
@@ -59,7 +59,6 @@ public extension Chord {
         let width: Int = cols * colWidth
         let height: Int = rows * rowHeight
 
-        let strokeWidth: Int = 4
         let radius = colWidth / 2 - strokeWidth
 
         let start = Point(colWidth, rowHeight * topOffset)
@@ -107,11 +106,11 @@ public extension Chord {
 
 public extension Chord {
 
-    public var svg: String {
+    public func svg(width: Int, strokeWidth: Int = 4) -> String {
 
         var lines: [String] = []
 
-        for shape in shapes() {
+        for shape in shapes(scale: width / 7 / 3, strokeWidth: strokeWidth) {
             lines.append(shape.xml)
         }
 
@@ -122,16 +121,26 @@ public extension Chord {
         }
     }
 
-    public var html: String {
+    public func html(width: Int, strokeWidth: Int = 4) -> String {
 
-        var lines: [String] = ["<div style=\"position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);\">"]
+        var lines: [String] = [
+            "<!doctype html>",
+            "<html>",
+            "<head><meta name=\"viewport\" content=\"initial-scale=1.0\" /></head>",
+            "<body style=\"margin: 0; padding: 0;\">",
+            "<div style=\"position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);\">"
+        ]
 
-        for shape in shapes() {
+        for shape in shapes(scale: width / 7 / 3, strokeWidth: strokeWidth) {
             lines.append(shape.xml)
         }
 
-        lines.append("</svg>")
-        lines.append("</div>")
+        lines.append(contentsOf: [
+            "</svg>",
+            "</div>",
+            "</body>",
+            "</html>"
+        ])
 
         return lines.reduce("") { prev, new in
             prev + "\n" + new
