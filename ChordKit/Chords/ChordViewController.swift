@@ -28,11 +28,4 @@ class ChordViewController: UIViewController {
         view = webView
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        // webView.loadHTMLString("Hello, world!", baseURL: nil)
-        // webView.loadHTMLString(Chord(name: "D", notes: "22r-44b".scale).svg, baseURL: nil)
-    }
-
 }

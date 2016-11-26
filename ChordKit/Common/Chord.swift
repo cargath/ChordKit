@@ -37,7 +37,7 @@ public struct Chord {
 
 }
 
-// MARK: -
+// MARK: - Chord+Shapes
 
 public extension Chord {
 

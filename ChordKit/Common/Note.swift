@@ -22,7 +22,7 @@ public struct Note {
 
 }
 
-// MARK: -
+// MARK: - Note+Shapes
 
 public extension Note {
 
