@@ -19,7 +19,7 @@ class ChordViewController: UIViewController {
     var chord: Chord? {
         didSet {
             if let chord = chord {
-                webView.loadHTMLString(chord.svg, baseURL: nil)
+                webView.loadHTMLString(chord.html, baseURL: nil)
             }
         }
     }

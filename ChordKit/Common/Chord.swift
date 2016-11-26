@@ -112,4 +112,20 @@ public extension Chord {
         }
     }
 
+    public var html: String {
+
+        var lines: [String] = ["<center>"]
+
+        for shape in shapes() {
+            lines.append(shape.xml)
+        }
+
+        lines.append("</svg>")
+        lines.append("</center>")
+
+        return lines.reduce("") { prev, new in
+            prev + "\n" + new
+        }
+    }
+
 }
