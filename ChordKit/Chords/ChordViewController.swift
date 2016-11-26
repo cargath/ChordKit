@@ -16,6 +16,14 @@ class ChordViewController: UIViewController {
         return WKWebView(frame: .zero)
     }()
 
+    var chord: Chord? {
+        didSet {
+            if let chord = chord {
+                webView.loadHTMLString(chord.svg, baseURL: nil)
+            }
+        }
+    }
+
     override func loadView() {
         view = webView
     }
@@ -24,7 +32,7 @@ class ChordViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // webView.loadHTMLString("Hello, world!", baseURL: nil)
-        webView.loadHTMLString(Chord(name: "D", notes: "22r-44b".scale).svg, baseURL: nil)
+        // webView.loadHTMLString(Chord(name: "D", notes: "22r-44b".scale).svg, baseURL: nil)
     }
 
 }
