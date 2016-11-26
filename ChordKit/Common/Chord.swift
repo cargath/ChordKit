@@ -62,7 +62,7 @@ public extension Chord {
         let strokeWidth: Int = 4
         let radius = colWidth / 2 - strokeWidth
 
-        let start = Point(colWidth, name.characters.count > 0 ? rowHeight : 0)
+        let start = Point(colWidth, rowHeight * topOffset)
         let end = Point(width - colWidth, height)
 
         var shapes: [Shape] = []
@@ -72,14 +72,14 @@ public extension Chord {
 
         // Title
         if (name.characters.count > 0) {
-            shapes.append(Text(coord: Point(start.x + colWidth, start.y - radius), size: radius * 2, text: name))
+            shapes.append(Text(coord: Point(start.x + colWidth, rowHeight - radius), size: radius * 2, text: name))
         }
 
         // Horizontal lines
         for i in 0 ... rows - topOffset {
             shapes.append(Line(
-                start: Point(start.x, start.y + rowHeight + rowHeight * i),
-                end: Point(end.x, start.y + rowHeight + rowHeight * i),
+                start: Point(start.x, start.y + rowHeight * i),
+                end: Point(end.x, start.y + rowHeight * i),
                 strokeWidth: i > 0 ? strokeWidth : strokeWidth * 2
             ))
         }
@@ -87,8 +87,8 @@ public extension Chord {
         // Vertical lines
         for i in 0 ... cols - 2 {
             shapes.append(Line(
-                start: Point(start.x + colWidth * i, start.y + rowHeight - strokeWidth),
-                end: Point(start.x + colWidth * i, end.y + rowHeight - strokeWidth / 2),
+                start: Point(start.x + colWidth * i, start.y - strokeWidth),
+                end: Point(start.x + colWidth * i, end.y + strokeWidth / 2),
                 strokeWidth: strokeWidth
             ))
         }

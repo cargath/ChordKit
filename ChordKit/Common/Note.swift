@@ -29,10 +29,10 @@ public extension Note {
     public func center(start: Point, end: Point, colWidth: Int, rowHeight: Int) -> Point {
 
         if fret <= 0 {
-            return Point(start.x + string * colWidth, start.y + rowHeight / 2)
+            return Point(start.x + string * colWidth, start.y - rowHeight / 2)
         }
 
-        return Point(start.x + string * colWidth, start.y + rowHeight / 2 + fret * rowHeight)
+        return Point(start.x + string * colWidth, start.y - rowHeight / 2 + fret * rowHeight)
     }
 
     public func shapes(start: Point, end: Point, colWidth: Int, rowHeight: Int, radius: Int, strokeWidth: Int) -> [Shape] {
