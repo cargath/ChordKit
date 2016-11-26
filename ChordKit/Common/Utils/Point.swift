@@ -2,7 +2,7 @@
 //  Point.swift
 //  ChordKit
 //
-//  Created by Carsten Könemann on 21/11/2016.
+//  Created by Carsten Könemann on 26/11/2016.
 //  Copyright © 2016 cargath. All rights reserved.
 //
 

@@ -8,4 +8,4 @@
 
 import Foundation
 
-print(SVG(children: ["C--3r-2-0-1r-0".chord]).print())
+print("Hello, world!")

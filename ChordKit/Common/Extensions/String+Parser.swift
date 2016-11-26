@@ -2,61 +2,64 @@
 //  String+Parser.swift
 //  ChordKit
 //
-//  Created by Carsten Könemann on 21/11/2016.
+//  Created by Carsten Könemann on 26/11/2016.
 //  Copyright © 2016 cargath. All rights reserved.
 //
 
-// MARK: - String+Color
+import UIKit
 
 public extension String {
 
-    public var color: Color {
+    var color: UIColor {
         switch self {
-        case "r":
-            return .red
-        case "b":
-            return .blue
-        default:
-            return .black
+            case "r", "R":
+                return .red
+            case "b", "B":
+                return .blue
+            default:
+                return .black
         }
     }
 
-}
+    var note: Note? {
 
-// MARK: - String+Note
+        guard let string = Int(self[0]) else {
+            return nil
+        }
 
-public extension String {
+        guard let fret = Int(self[1]) else {
+            return Note(fret: -1, string: string, color: self[1].color)
+        }
 
-    public var note: Note {
+        return Note(fret: fret, string: string, color: self[2].color)
+    }
 
-        if let fret = Int(self[0]) {
+    var chord: [Note] {
 
-            if let string = Int(self[1]) {
-                return Note(fret: fret, string: string, color: self[2].color)
+        if self.characters.count != 6 {
+            return []
+        }
+
+        var notes: [Note] = []
+
+        for i in 0 ..< 6 {
+
+            if let fret = Int(self[i]) {
+                notes.append(Note(fret: fret, string: i, color: .black))
             }
 
-            return Note(fret: fret, color: self[1].color)
+            if self[i] == "x" || self[i] == "X" {
+                notes.append(Note(fret: -1, string: i, color: .black))
+            }
         }
 
-        return Note()
+        return notes
     }
 
-    public var notes: [Note] {
-        return self.components(separatedBy: "-").map({$0.note})
+    var scale: [Note] {
+        return self.components(separatedBy: "-").flatMap { component in
+            component.note
+        }
     }
     
-}
-
-// MARK: - String+Chord
-
-public extension String {
-
-    public var chord: Chord {
-        var components: [String] = self.components(separatedBy: "-")
-        let name = components[0]
-        components.removeFirst()
-
-        return Chord(name: name, notes: components.map({$0.note}))
-    }
-
 }
