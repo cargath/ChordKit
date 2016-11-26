@@ -92,3 +92,24 @@ public extension Chord {
     }
     
 }
+
+// MARK: - Chord+SVG
+
+public extension Chord {
+
+    public var svg: String {
+
+        var lines: [String] = []
+
+        for shape in shapes() {
+            lines.append(shape.xml)
+        }
+
+        lines.append("</svg>")
+
+        return lines.reduce("") { prev, new in
+            prev + "\n" + new
+        }
+    }
+
+}

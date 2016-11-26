@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3546F3841DE36D69005702EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546F3831DE36D69005702EE /* AppDelegate.swift */; };
-		3546F3861DE36D69005702EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546F3851DE36D69005702EE /* ViewController.swift */; };
 		3546F38B1DE36D69005702EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3546F38A1DE36D69005702EE /* Assets.xcassets */; };
 		3546F38E1DE36D69005702EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3546F38C1DE36D69005702EE /* LaunchScreen.storyboard */; };
 		3546F3931DE36EC9005702EE /* ChordKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD97D2E31DE349F4001703A9 /* ChordKit.framework */; };
@@ -34,6 +33,8 @@
 		35DFA6631DE998F400C15B90 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6611DE998F400C15B90 /* String+Subscript.swift */; };
 		35DFA6651DE9991600C15B90 /* String+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6641DE9991500C15B90 /* String+Parser.swift */; };
 		35DFA6661DE9991600C15B90 /* String+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6641DE9991500C15B90 /* String+Parser.swift */; };
+		35DFA6681DE99A4D00C15B90 /* ChordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6671DE99A4D00C15B90 /* ChordTableViewController.swift */; };
+		35DFA66C1DE99CC000C15B90 /* ChordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA66B1DE99CC000C15B90 /* ChordViewController.swift */; };
 		AD97D2ED1DE349F4001703A9 /* ChordKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD97D2E31DE349F4001703A9 /* ChordKit.framework */; };
 		AD97D2F21DE349F4001703A9 /* ChordKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD97D2F11DE349F4001703A9 /* ChordKitTests.swift */; };
 		AD97D2F41DE349F4001703A9 /* ChordKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AD97D2E61DE349F4001703A9 /* ChordKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,7 +66,6 @@
 /* Begin PBXFileReference section */
 		3546F3811DE36D69005702EE /* Chords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3546F3831DE36D69005702EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3546F3851DE36D69005702EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3546F38A1DE36D69005702EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3546F38D1DE36D69005702EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3546F38F1DE36D69005702EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +80,8 @@
 		35DFA65E1DE998C100C15B90 /* Chord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chord.swift; path = Common/Chord.swift; sourceTree = "<group>"; };
 		35DFA6611DE998F400C15B90 /* String+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Subscript.swift"; path = "Common/Extensions/String+Subscript.swift"; sourceTree = "<group>"; };
 		35DFA6641DE9991500C15B90 /* String+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Parser.swift"; path = "Common/Extensions/String+Parser.swift"; sourceTree = "<group>"; };
+		35DFA6671DE99A4D00C15B90 /* ChordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordTableViewController.swift; sourceTree = "<group>"; };
+		35DFA66B1DE99CC000C15B90 /* ChordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordViewController.swift; sourceTree = "<group>"; };
 		AD97D2E31DE349F4001703A9 /* ChordKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChordKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD97D2E61DE349F4001703A9 /* ChordKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChordKit.h; sourceTree = "<group>"; };
 		AD97D2E71DE349F4001703A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,7 +143,8 @@
 				3546F38C1DE36D69005702EE /* LaunchScreen.storyboard */,
 				3546F38F1DE36D69005702EE /* Info.plist */,
 				3546F3831DE36D69005702EE /* AppDelegate.swift */,
-				3546F3851DE36D69005702EE /* ViewController.swift */,
+				35DFA6671DE99A4D00C15B90 /* ChordTableViewController.swift */,
+				35DFA66B1DE99CC000C15B90 /* ChordViewController.swift */,
 			);
 			path = Chords;
 			sourceTree = "<group>";
@@ -392,8 +395,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3546F3861DE36D69005702EE /* ViewController.swift in Sources */,
+				35DFA6681DE99A4D00C15B90 /* ChordTableViewController.swift in Sources */,
 				3546F3841DE36D69005702EE /* AppDelegate.swift in Sources */,
+				35DFA66C1DE99CC000C15B90 /* ChordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
