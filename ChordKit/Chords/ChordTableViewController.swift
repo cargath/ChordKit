@@ -11,18 +11,13 @@ import ChordKit
 
 class ChordTableViewController: UIViewController {
 
-    lazy var tableView: UITableView = {
-        return UITableView(frame: .zero)
-    }()
+    lazy var tableView = UITableView(frame: .zero)
 
-    lazy var data: [Chord] = {
-        return [
-            Chord(name: "", scale: "22r-44b"),
-            Chord(name: "D", scale: "22r-44b"),
-            Chord(name: "", scale: "22r-3-10-44b"),
-            Chord(name: "D", scale: "22r-3-10-44b")
-        ]
-    }()
+    var data: [ChordTableViewSection] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     override func loadView() {
         view = tableView
@@ -33,6 +28,19 @@ class ChordTableViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tableView.dataSource = self
         tableView.delegate = self
+        data = ChordTableViewSection.from(JSONArrayNamed: "Defaults")
+    }
+
+    func dataAt(_ indexPath: IndexPath) -> ChordTableViewRow {
+        return data[indexPath.section].rows[indexPath.row]
+    }
+
+    func titleAt(_ indexPath: IndexPath) -> String? {
+        return dataAt(indexPath).title
+    }
+
+    func chordAt(_ indexPath: IndexPath) -> Chord? {
+        return dataAt(indexPath).chord?.chord
     }
 
 }
@@ -41,13 +49,25 @@ class ChordTableViewController: UIViewController {
 
 extension ChordTableViewController: UITableViewDataSource {
 
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    // MARK: Sections
+
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return data.count
+    }
+
+    public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return data[section].title
+    }
+
+    // MARK: Rows
+
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data[section].rows.count
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(frame: .zero)
-        cell.textLabel?.text = "\(data[indexPath.row].name) (\(data[indexPath.row].stringRepresentation))"
+        cell.textLabel?.text = titleAt(indexPath)
         return cell
     }
 
@@ -57,15 +77,26 @@ extension ChordTableViewController: UITableViewDataSource {
 
 extension ChordTableViewController: UITableViewDelegate {
 
-    public func childViewControllerAt(indexPath: IndexPath) -> UIViewController {
+    public func childViewControllerAt(indexPath: IndexPath) -> UIViewController? {
+
+        guard let chord = chordAt(indexPath) else {
+            return nil
+        }
+
         let childViewController = ChordViewController()
-        childViewController.chord = data[indexPath.row]
+        childViewController.chord = chord
+        childViewController.navigationItem.title = titleAt(indexPath)
+
         return childViewController
     }
 
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
         tableView.deselectRow(at: indexPath, animated: true)
-        navigationController?.pushViewController(childViewControllerAt(indexPath: indexPath), animated: true)
+
+        if let childViewController = childViewControllerAt(indexPath: indexPath) {
+            navigationController?.pushViewController(childViewController, animated: true)
+        }
     }
 
 }

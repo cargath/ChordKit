@@ -45,11 +45,11 @@ public extension String {
         for i in 0 ..< 6 {
 
             if let fret = Int(self[i]) {
-                notes.append(Note(fret: fret, string: i, color: .black))
+                notes.append(Note(fret: fret, string: i + 1, color: .black))
             }
 
             if self[i] == "x" || self[i] == "X" {
-                notes.append(Note(fret: -1, string: i, color: .black))
+                notes.append(Note(fret: -1, string: i + 1, color: .black))
             }
         }
 

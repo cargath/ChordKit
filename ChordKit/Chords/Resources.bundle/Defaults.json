@@ -1,0 +1,41 @@
+[
+    {
+        "title": "Section Title 1",
+        "rows": [
+            {
+                "title": "Row Title 1",
+                "chord": "x-x23x"
+            },
+            {
+                "title": "Row Title 2",
+                "scale": "22r-44b"
+            }
+        ]
+    },
+    {
+        "title": "Section Title 2",
+        "rows": [
+            {
+                "title": "Row Title 1",
+                "chord": "x-x23x"
+            },
+            {
+                "title": "Row Title 2",
+                "scale": "22r-3-10-44b"
+            }
+        ]
+    },
+    {
+        "title": "Section Title 3",
+        "rows": [
+            {
+                "title": "Row Title 1",
+                "chord": "x-x23x"
+            },
+            {
+                "title": "Row Title 2",
+                "scale": "22r-44b"
+            }
+        ]
+    }
+]

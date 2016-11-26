@@ -7,41 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351ABD951DEA06C900BD5876 /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351ABD931DEA06C900BD5876 /* Chord.swift */; };
+		351ABD961DEA06C900BD5876 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351ABD941DEA06C900BD5876 /* Note.swift */; };
+		351ABD981DEA06D800BD5876 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351ABD971DEA06D800BD5876 /* Point.swift */; };
+		351ABD9E1DEA06E100BD5876 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351ABD991DEA06E100BD5876 /* Circle.swift */; };
+		351ABD9F1DEA06E100BD5876 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351ABD9A1DEA06E100BD5876 /* Line.swift */; };
+		351ABDA01DEA06E100BD5876 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351ABD9B1DEA06E100BD5876 /* Shape.swift */; };
+		351ABDA11DEA06E100BD5876 /* SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351ABD9C1DEA06E100BD5876 /* SVG.swift */; };
+		351ABDA21DEA06E100BD5876 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351ABD9D1DEA06E100BD5876 /* Text.swift */; };
+		351ABDA61DEA06E900BD5876 /* String+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351ABDA31DEA06E900BD5876 /* String+Parser.swift */; };
+		351ABDA71DEA06E900BD5876 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351ABDA41DEA06E900BD5876 /* String+Subscript.swift */; };
+		351ABDA81DEA06E900BD5876 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351ABDA51DEA06E900BD5876 /* UIColor+Hex.swift */; };
 		3546F3841DE36D69005702EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546F3831DE36D69005702EE /* AppDelegate.swift */; };
 		3546F38B1DE36D69005702EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3546F38A1DE36D69005702EE /* Assets.xcassets */; };
 		3546F38E1DE36D69005702EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3546F38C1DE36D69005702EE /* LaunchScreen.storyboard */; };
 		3546F3931DE36EC9005702EE /* ChordKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD97D2E31DE349F4001703A9 /* ChordKit.framework */; };
-		35DFA6461DE9972D00C15B90 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6451DE9972D00C15B90 /* UIColor+Hex.swift */; };
-		35DFA6471DE9972D00C15B90 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6451DE9972D00C15B90 /* UIColor+Hex.swift */; };
-		35DFA6491DE9976500C15B90 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6481DE9976500C15B90 /* Shape.swift */; };
-		35DFA64A1DE9976500C15B90 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6481DE9976500C15B90 /* Shape.swift */; };
-		35DFA64D1DE997A700C15B90 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA64C1DE997A700C15B90 /* Point.swift */; };
-		35DFA64E1DE997A700C15B90 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA64C1DE997A700C15B90 /* Point.swift */; };
-		35DFA6501DE997CB00C15B90 /* SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA64F1DE997CB00C15B90 /* SVG.swift */; };
-		35DFA6511DE997CB00C15B90 /* SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA64F1DE997CB00C15B90 /* SVG.swift */; };
-		35DFA6531DE997F400C15B90 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6521DE997F400C15B90 /* Line.swift */; };
-		35DFA6541DE997F400C15B90 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6521DE997F400C15B90 /* Line.swift */; };
-		35DFA6561DE9984500C15B90 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6551DE9984500C15B90 /* Circle.swift */; };
-		35DFA6571DE9984500C15B90 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6551DE9984500C15B90 /* Circle.swift */; };
-		35DFA6591DE9986D00C15B90 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6581DE9986D00C15B90 /* Text.swift */; };
-		35DFA65A1DE9986D00C15B90 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6581DE9986D00C15B90 /* Text.swift */; };
-		35DFA65C1DE9989700C15B90 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA65B1DE9989700C15B90 /* Note.swift */; };
-		35DFA65D1DE9989700C15B90 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA65B1DE9989700C15B90 /* Note.swift */; };
-		35DFA65F1DE998C100C15B90 /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA65E1DE998C100C15B90 /* Chord.swift */; };
-		35DFA6601DE998C100C15B90 /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA65E1DE998C100C15B90 /* Chord.swift */; };
-		35DFA6621DE998F400C15B90 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6611DE998F400C15B90 /* String+Subscript.swift */; };
-		35DFA6631DE998F400C15B90 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6611DE998F400C15B90 /* String+Subscript.swift */; };
-		35DFA6651DE9991600C15B90 /* String+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6641DE9991500C15B90 /* String+Parser.swift */; };
-		35DFA6661DE9991600C15B90 /* String+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6641DE9991500C15B90 /* String+Parser.swift */; };
 		35DFA6681DE99A4D00C15B90 /* ChordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6671DE99A4D00C15B90 /* ChordTableViewController.swift */; };
 		35DFA66C1DE99CC000C15B90 /* ChordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA66B1DE99CC000C15B90 /* ChordViewController.swift */; };
+		35DFA66E1DE9EA3500C15B90 /* ChordTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA66D1DE9EA3500C15B90 /* ChordTableViewSection.swift */; };
+		35DFA6701DE9EA4300C15B90 /* ChordTableViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA66F1DE9EA4300C15B90 /* ChordTableViewRow.swift */; };
+		35DFA6721DE9EC7F00C15B90 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35DFA6711DE9EC7F00C15B90 /* Resources.bundle */; };
+		35DFA6771DE9EDDD00C15B90 /* JSONObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA6761DE9EDDD00C15B90 /* JSONObjectConvertible.swift */; };
+		35DFA67F1DE9F0FA00C15B90 /* ChordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA67E1DE9F0FA00C15B90 /* ChordsTests.swift */; };
 		AD97D2ED1DE349F4001703A9 /* ChordKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD97D2E31DE349F4001703A9 /* ChordKit.framework */; };
 		AD97D2F21DE349F4001703A9 /* ChordKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD97D2F11DE349F4001703A9 /* ChordKitTests.swift */; };
 		AD97D2F41DE349F4001703A9 /* ChordKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AD97D2E61DE349F4001703A9 /* ChordKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD97D3051DE34A33001703A9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD97D3041DE34A33001703A9 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		35DFA6811DE9F0FA00C15B90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD97D2DA1DE349F4001703A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3546F3801DE36D69005702EE;
+			remoteInfo = Chords;
+		};
 		AD97D2EE1DE349F4001703A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AD97D2DA1DE349F4001703A9 /* Project object */;
@@ -51,45 +51,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		AD97D3001DE34A33001703A9 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		351ABD931DEA06C900BD5876 /* Chord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chord.swift; sourceTree = "<group>"; };
+		351ABD941DEA06C900BD5876 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		351ABD971DEA06D800BD5876 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Point.swift; path = ChordKit/Utils/Point.swift; sourceTree = "<group>"; };
+		351ABD991DEA06E100BD5876 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = ChordKit/Shapes/Circle.swift; sourceTree = "<group>"; };
+		351ABD9A1DEA06E100BD5876 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Line.swift; path = ChordKit/Shapes/Line.swift; sourceTree = "<group>"; };
+		351ABD9B1DEA06E100BD5876 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = ChordKit/Shapes/Shape.swift; sourceTree = "<group>"; };
+		351ABD9C1DEA06E100BD5876 /* SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVG.swift; path = ChordKit/Shapes/SVG.swift; sourceTree = "<group>"; };
+		351ABD9D1DEA06E100BD5876 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Text.swift; path = ChordKit/Shapes/Text.swift; sourceTree = "<group>"; };
+		351ABDA31DEA06E900BD5876 /* String+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Parser.swift"; path = "ChordKit/Extensions/String+Parser.swift"; sourceTree = "<group>"; };
+		351ABDA41DEA06E900BD5876 /* String+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Subscript.swift"; path = "ChordKit/Extensions/String+Subscript.swift"; sourceTree = "<group>"; };
+		351ABDA51DEA06E900BD5876 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Hex.swift"; path = "ChordKit/Extensions/UIColor+Hex.swift"; sourceTree = "<group>"; };
 		3546F3811DE36D69005702EE /* Chords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3546F3831DE36D69005702EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3546F38A1DE36D69005702EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3546F38D1DE36D69005702EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3546F38F1DE36D69005702EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35DFA6451DE9972D00C15B90 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Hex.swift"; path = "Common/Extensions/UIColor+Hex.swift"; sourceTree = "<group>"; };
-		35DFA6481DE9976500C15B90 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Common/Shapes/Shape.swift; sourceTree = "<group>"; };
-		35DFA64C1DE997A700C15B90 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Common/Utils/Point.swift; sourceTree = "<group>"; };
-		35DFA64F1DE997CB00C15B90 /* SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVG.swift; path = Common/Shapes/SVG.swift; sourceTree = "<group>"; };
-		35DFA6521DE997F400C15B90 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Line.swift; path = Common/Shapes/Line.swift; sourceTree = "<group>"; };
-		35DFA6551DE9984500C15B90 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = Common/Shapes/Circle.swift; sourceTree = "<group>"; };
-		35DFA6581DE9986D00C15B90 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Text.swift; path = Common/Shapes/Text.swift; sourceTree = "<group>"; };
-		35DFA65B1DE9989700C15B90 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Note.swift; path = Common/Note.swift; sourceTree = "<group>"; };
-		35DFA65E1DE998C100C15B90 /* Chord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chord.swift; path = Common/Chord.swift; sourceTree = "<group>"; };
-		35DFA6611DE998F400C15B90 /* String+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Subscript.swift"; path = "Common/Extensions/String+Subscript.swift"; sourceTree = "<group>"; };
-		35DFA6641DE9991500C15B90 /* String+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Parser.swift"; path = "Common/Extensions/String+Parser.swift"; sourceTree = "<group>"; };
 		35DFA6671DE99A4D00C15B90 /* ChordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordTableViewController.swift; sourceTree = "<group>"; };
 		35DFA66B1DE99CC000C15B90 /* ChordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordViewController.swift; sourceTree = "<group>"; };
+		35DFA66D1DE9EA3500C15B90 /* ChordTableViewSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordTableViewSection.swift; sourceTree = "<group>"; };
+		35DFA66F1DE9EA4300C15B90 /* ChordTableViewRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordTableViewRow.swift; sourceTree = "<group>"; };
+		35DFA6711DE9EC7F00C15B90 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
+		35DFA6761DE9EDDD00C15B90 /* JSONObjectConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONObjectConvertible.swift; path = Utils/JSONObjectConvertible.swift; sourceTree = "<group>"; };
+		35DFA67C1DE9F0FA00C15B90 /* ChordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DFA67E1DE9F0FA00C15B90 /* ChordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordsTests.swift; sourceTree = "<group>"; };
+		35DFA6801DE9F0FA00C15B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD97D2E31DE349F4001703A9 /* ChordKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChordKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD97D2E61DE349F4001703A9 /* ChordKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChordKit.h; sourceTree = "<group>"; };
 		AD97D2E71DE349F4001703A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD97D2EC1DE349F4001703A9 /* ChordKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChordKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD97D2F11DE349F4001703A9 /* ChordKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordKitTests.swift; sourceTree = "<group>"; };
 		AD97D2F31DE349F4001703A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD97D3021DE34A33001703A9 /* Chord */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Chord; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD97D3041DE34A33001703A9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +91,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3546F3931DE36EC9005702EE /* ChordKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DFA6791DE9F0FA00C15B90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,35 +116,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD97D2FF1DE34A33001703A9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3546F34B1DE36754005702EE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				35DFA6641DE9991500C15B90 /* String+Parser.swift */,
-				35DFA6611DE998F400C15B90 /* String+Subscript.swift */,
-				35DFA6451DE9972D00C15B90 /* UIColor+Hex.swift */,
+				351ABDA31DEA06E900BD5876 /* String+Parser.swift */,
+				351ABDA41DEA06E900BD5876 /* String+Subscript.swift */,
+				351ABDA51DEA06E900BD5876 /* UIColor+Hex.swift */,
 			);
 			name = Extensions;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		3546F3821DE36D69005702EE /* Chords */ = {
 			isa = PBXGroup;
 			children = (
-				3546F38A1DE36D69005702EE /* Assets.xcassets */,
-				3546F38C1DE36D69005702EE /* LaunchScreen.storyboard */,
-				3546F38F1DE36D69005702EE /* Info.plist */,
+				35DFA6731DE9ED5000C15B90 /* Utils */,
+				35DFA6751DE9EDB100C15B90 /* Views */,
 				3546F3831DE36D69005702EE /* AppDelegate.swift */,
-				35DFA6671DE99A4D00C15B90 /* ChordTableViewController.swift */,
-				35DFA66B1DE99CC000C15B90 /* ChordViewController.swift */,
+				3546F38A1DE36D69005702EE /* Assets.xcassets */,
+				3546F38F1DE36D69005702EE /* Info.plist */,
+				3546F38C1DE36D69005702EE /* LaunchScreen.storyboard */,
+				35DFA6711DE9EC7F00C15B90 /* Resources.bundle */,
 			);
 			path = Chords;
 			sourceTree = "<group>";
@@ -152,31 +147,60 @@
 		3546F3971DE65C28005702EE /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				35DFA6551DE9984500C15B90 /* Circle.swift */,
-				35DFA6521DE997F400C15B90 /* Line.swift */,
-				35DFA6481DE9976500C15B90 /* Shape.swift */,
-				35DFA64F1DE997CB00C15B90 /* SVG.swift */,
-				35DFA6581DE9986D00C15B90 /* Text.swift */,
+				351ABD991DEA06E100BD5876 /* Circle.swift */,
+				351ABD9A1DEA06E100BD5876 /* Line.swift */,
+				351ABD9B1DEA06E100BD5876 /* Shape.swift */,
+				351ABD9C1DEA06E100BD5876 /* SVG.swift */,
+				351ABD9D1DEA06E100BD5876 /* Text.swift */,
 			);
 			name = Shapes;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		35DFA64B1DE9978000C15B90 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				35DFA64C1DE997A700C15B90 /* Point.swift */,
+				351ABD971DEA06D800BD5876 /* Point.swift */,
 			);
 			name = Utils;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		35DFA6731DE9ED5000C15B90 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				35DFA6761DE9EDDD00C15B90 /* JSONObjectConvertible.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		35DFA6751DE9EDB100C15B90 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35DFA6671DE99A4D00C15B90 /* ChordTableViewController.swift */,
+				35DFA66F1DE9EA4300C15B90 /* ChordTableViewRow.swift */,
+				35DFA66D1DE9EA3500C15B90 /* ChordTableViewSection.swift */,
+				35DFA66B1DE99CC000C15B90 /* ChordViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		35DFA67D1DE9F0FA00C15B90 /* ChordsTests */ = {
+			isa = PBXGroup;
+			children = (
+				35DFA67E1DE9F0FA00C15B90 /* ChordsTests.swift */,
+				35DFA6801DE9F0FA00C15B90 /* Info.plist */,
+			);
+			path = ChordsTests;
 			sourceTree = "<group>";
 		};
 		AD97D2D91DE349F4001703A9 = {
 			isa = PBXGroup;
 			children = (
-				AD97D2FD1DE34A03001703A9 /* Common */,
 				AD97D2E51DE349F4001703A9 /* ChordKit */,
 				AD97D2F01DE349F4001703A9 /* ChordKitTests */,
-				AD97D3031DE34A33001703A9 /* Chord */,
 				3546F3821DE36D69005702EE /* Chords */,
+				35DFA67D1DE9F0FA00C15B90 /* ChordsTests */,
 				AD97D2E41DE349F4001703A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -186,8 +210,8 @@
 			children = (
 				AD97D2E31DE349F4001703A9 /* ChordKit.framework */,
 				AD97D2EC1DE349F4001703A9 /* ChordKitTests.xctest */,
-				AD97D3021DE34A33001703A9 /* Chord */,
 				3546F3811DE36D69005702EE /* Chords.app */,
+				35DFA67C1DE9F0FA00C15B90 /* ChordsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +219,11 @@
 		AD97D2E51DE349F4001703A9 /* ChordKit */ = {
 			isa = PBXGroup;
 			children = (
+				3546F34B1DE36754005702EE /* Extensions */,
+				3546F3971DE65C28005702EE /* Shapes */,
+				35DFA64B1DE9978000C15B90 /* Utils */,
+				351ABD931DEA06C900BD5876 /* Chord.swift */,
+				351ABD941DEA06C900BD5876 /* Note.swift */,
 				AD97D2E61DE349F4001703A9 /* ChordKit.h */,
 				AD97D2E71DE349F4001703A9 /* Info.plist */,
 			);
@@ -208,26 +237,6 @@
 				AD97D2F31DE349F4001703A9 /* Info.plist */,
 			);
 			path = ChordKitTests;
-			sourceTree = "<group>";
-		};
-		AD97D2FD1DE34A03001703A9 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				3546F34B1DE36754005702EE /* Extensions */,
-				3546F3971DE65C28005702EE /* Shapes */,
-				35DFA64B1DE9978000C15B90 /* Utils */,
-				35DFA65E1DE998C100C15B90 /* Chord.swift */,
-				35DFA65B1DE9989700C15B90 /* Note.swift */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
-		AD97D3031DE34A33001703A9 /* Chord */ = {
-			isa = PBXGroup;
-			children = (
-				AD97D3041DE34A33001703A9 /* main.swift */,
-			);
-			path = Chord;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +269,24 @@
 			productName = Chords;
 			productReference = 3546F3811DE36D69005702EE /* Chords.app */;
 			productType = "com.apple.product-type.application";
+		};
+		35DFA67B1DE9F0FA00C15B90 /* ChordsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35DFA6831DE9F0FA00C15B90 /* Build configuration list for PBXNativeTarget "ChordsTests" */;
+			buildPhases = (
+				35DFA6781DE9F0FA00C15B90 /* Sources */,
+				35DFA6791DE9F0FA00C15B90 /* Frameworks */,
+				35DFA67A1DE9F0FA00C15B90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35DFA6821DE9F0FA00C15B90 /* PBXTargetDependency */,
+			);
+			name = ChordsTests;
+			productName = ChordsTests;
+			productReference = 35DFA67C1DE9F0FA00C15B90 /* ChordsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		AD97D2E21DE349F4001703A9 /* ChordKit */ = {
 			isa = PBXNativeTarget;
@@ -297,23 +324,6 @@
 			productReference = AD97D2EC1DE349F4001703A9 /* ChordKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AD97D3011DE34A33001703A9 /* Chord */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD97D3061DE34A33001703A9 /* Build configuration list for PBXNativeTarget "Chord" */;
-			buildPhases = (
-				AD97D2FE1DE34A33001703A9 /* Sources */,
-				AD97D2FF1DE34A33001703A9 /* Frameworks */,
-				AD97D3001DE34A33001703A9 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Chord;
-			productName = Chord;
-			productReference = AD97D3021DE34A33001703A9 /* Chord */;
-			productType = "com.apple.product-type.tool";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -328,16 +338,17 @@
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
+					35DFA67B1DE9F0FA00C15B90 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3546F3801DE36D69005702EE;
+					};
 					AD97D2E21DE349F4001703A9 = {
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					AD97D2EB1DE349F4001703A9 = {
-						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
-					};
-					AD97D3011DE34A33001703A9 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -358,8 +369,8 @@
 			targets = (
 				AD97D2E21DE349F4001703A9 /* ChordKit */,
 				AD97D2EB1DE349F4001703A9 /* ChordKitTests */,
-				AD97D3011DE34A33001703A9 /* Chord */,
 				3546F3801DE36D69005702EE /* Chords */,
+				35DFA67B1DE9F0FA00C15B90 /* ChordsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -370,7 +381,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3546F38E1DE36D69005702EE /* LaunchScreen.storyboard in Resources */,
+				35DFA6721DE9EC7F00C15B90 /* Resources.bundle in Resources */,
 				3546F38B1DE36D69005702EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DFA67A1DE9F0FA00C15B90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +416,18 @@
 			files = (
 				35DFA6681DE99A4D00C15B90 /* ChordTableViewController.swift in Sources */,
 				3546F3841DE36D69005702EE /* AppDelegate.swift in Sources */,
+				35DFA6701DE9EA4300C15B90 /* ChordTableViewRow.swift in Sources */,
+				35DFA66E1DE9EA3500C15B90 /* ChordTableViewSection.swift in Sources */,
+				35DFA6771DE9EDDD00C15B90 /* JSONObjectConvertible.swift in Sources */,
 				35DFA66C1DE99CC000C15B90 /* ChordViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DFA6781DE9F0FA00C15B90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DFA67F1DE9F0FA00C15B90 /* ChordsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,17 +435,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35DFA6501DE997CB00C15B90 /* SVG.swift in Sources */,
-				35DFA6461DE9972D00C15B90 /* UIColor+Hex.swift in Sources */,
-				35DFA6491DE9976500C15B90 /* Shape.swift in Sources */,
-				35DFA65C1DE9989700C15B90 /* Note.swift in Sources */,
-				35DFA6591DE9986D00C15B90 /* Text.swift in Sources */,
-				35DFA64D1DE997A700C15B90 /* Point.swift in Sources */,
-				35DFA65F1DE998C100C15B90 /* Chord.swift in Sources */,
-				35DFA6531DE997F400C15B90 /* Line.swift in Sources */,
-				35DFA6621DE998F400C15B90 /* String+Subscript.swift in Sources */,
-				35DFA6561DE9984500C15B90 /* Circle.swift in Sources */,
-				35DFA6651DE9991600C15B90 /* String+Parser.swift in Sources */,
+				351ABDA71DEA06E900BD5876 /* String+Subscript.swift in Sources */,
+				351ABDA61DEA06E900BD5876 /* String+Parser.swift in Sources */,
+				351ABDA11DEA06E100BD5876 /* SVG.swift in Sources */,
+				351ABD961DEA06C900BD5876 /* Note.swift in Sources */,
+				351ABD9F1DEA06E100BD5876 /* Line.swift in Sources */,
+				351ABDA81DEA06E900BD5876 /* UIColor+Hex.swift in Sources */,
+				351ABD951DEA06C900BD5876 /* Chord.swift in Sources */,
+				351ABD981DEA06D800BD5876 /* Point.swift in Sources */,
+				351ABDA21DEA06E100BD5876 /* Text.swift in Sources */,
+				351ABDA01DEA06E100BD5876 /* Shape.swift in Sources */,
+				351ABD9E1DEA06E100BD5876 /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,28 +457,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD97D2FE1DE34A33001703A9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35DFA6571DE9984500C15B90 /* Circle.swift in Sources */,
-				35DFA6661DE9991600C15B90 /* String+Parser.swift in Sources */,
-				35DFA64E1DE997A700C15B90 /* Point.swift in Sources */,
-				35DFA65A1DE9986D00C15B90 /* Text.swift in Sources */,
-				35DFA6511DE997CB00C15B90 /* SVG.swift in Sources */,
-				AD97D3051DE34A33001703A9 /* main.swift in Sources */,
-				35DFA65D1DE9989700C15B90 /* Note.swift in Sources */,
-				35DFA6601DE998C100C15B90 /* Chord.swift in Sources */,
-				35DFA6541DE997F400C15B90 /* Line.swift in Sources */,
-				35DFA64A1DE9976500C15B90 /* Shape.swift in Sources */,
-				35DFA6631DE998F400C15B90 /* String+Subscript.swift in Sources */,
-				35DFA6471DE9972D00C15B90 /* UIColor+Hex.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		35DFA6821DE9F0FA00C15B90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3546F3801DE36D69005702EE /* Chords */;
+			targetProxy = 35DFA6811DE9F0FA00C15B90 /* PBXContainerItemProxy */;
+		};
 		AD97D2EF1DE349F4001703A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AD97D2E21DE349F4001703A9 /* ChordKit */;
@@ -493,6 +509,34 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		35DFA6841DE9F0FA00C15B90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ChordsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.cargath.ChordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chords.app/Chords";
+			};
+			name = Debug;
+		};
+		35DFA6851DE9F0FA00C15B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ChordsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.cargath.ChordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chords.app/Chords";
 			};
 			name = Release;
 		};
@@ -660,28 +704,6 @@
 			};
 			name = Release;
 		};
-		AD97D3071DE34A33001703A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		AD97D3081DE34A33001703A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -690,6 +712,15 @@
 			buildConfigurations = (
 				3546F3911DE36D69005702EE /* Debug */,
 				3546F3921DE36D69005702EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35DFA6831DE9F0FA00C15B90 /* Build configuration list for PBXNativeTarget "ChordsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DFA6841DE9F0FA00C15B90 /* Debug */,
+				35DFA6851DE9F0FA00C15B90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -717,15 +748,6 @@
 			buildConfigurations = (
 				AD97D2FB1DE349F4001703A9 /* Debug */,
 				AD97D2FC1DE349F4001703A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD97D3061DE34A33001703A9 /* Build configuration list for PBXNativeTarget "Chord" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD97D3071DE34A33001703A9 /* Debug */,
-				AD97D3081DE34A33001703A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
