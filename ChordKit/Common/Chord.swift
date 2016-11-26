@@ -124,14 +124,14 @@ public extension Chord {
 
     public var html: String {
 
-        var lines: [String] = ["<center>"]
+        var lines: [String] = ["<div style=\"position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);\">"]
 
         for shape in shapes() {
             lines.append(shape.xml)
         }
 
         lines.append("</svg>")
-        lines.append("</center>")
+        lines.append("</div>")
 
         return lines.reduce("") { prev, new in
             prev + "\n" + new
