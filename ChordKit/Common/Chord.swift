@@ -9,14 +9,16 @@
 public struct Chord {
 
     public let name: String
+    public let stringRepresentation: String
     public let notes: [Note]
     public let topOffset: Int
     public let cols: Int
     public let rows: Int
 
-    public init(name: String = "", notes: [Note] = [], cols: Int = 7, rows: Int = 6) {
+    public init(name: String, stringRepresentation: String, notes: [Note] = [], cols: Int, rows: Int) {
 
         self.name = name
+        self.stringRepresentation = stringRepresentation
         self.notes = notes
 
         var topOffset: Int = 0
@@ -33,6 +35,14 @@ public struct Chord {
         self.topOffset = topOffset
         self.cols = cols
         self.rows = rows + topOffset
+    }
+
+    public init(name: String = "", chord: String, cols: Int = 7, rows: Int = 6) {
+        self.init(name: name, stringRepresentation: chord, notes: chord.chord, cols: cols, rows: rows)
+    }
+
+    public init(name: String = "", scale: String, cols: Int = 7, rows: Int = 6) {
+        self.init(name: name, stringRepresentation: scale, notes: scale.scale, cols: cols, rows: rows)
     }
 
 }

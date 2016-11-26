@@ -17,10 +17,10 @@ class ChordTableViewController: UIViewController {
 
     lazy var data: [Chord] = {
         return [
-            Chord(name: "", notes: "22r-44b".scale),
-            Chord(name: "D", notes: "22r-44b".scale),
-            Chord(name: "", notes: "22r-3-10-44b".scale),
-            Chord(name: "D", notes: "22r-3-10-44b".scale)
+            Chord(name: "", scale: "22r-44b"),
+            Chord(name: "D", scale: "22r-44b"),
+            Chord(name: "", scale: "22r-3-10-44b"),
+            Chord(name: "D", scale: "22r-3-10-44b")
         ]
     }()
 
@@ -47,7 +47,7 @@ extension ChordTableViewController: UITableViewDataSource {
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(frame: .zero)
-        cell.textLabel?.text = data[indexPath.row].name
+        cell.textLabel?.text = "\(data[indexPath.row].name) (\(data[indexPath.row].stringRepresentation))"
         return cell
     }
 
