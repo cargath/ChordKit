@@ -6,15 +6,19 @@
 //  Copyright © 2016 cargath. All rights reserved.
 //
 
+import UIKit
+
 public struct Line {
 
     public var start: Point
     public var end: Point
+    public var stroke: UIColor
     public var strokeWidth: Int
 
-    public init(start: Point, end: Point, strokeWidth: Int) {
+    public init(start: Point, end: Point, stroke: UIColor = .black, strokeWidth: Int) {
         self.start = start
         self.end = end
+        self.stroke = stroke
         self.strokeWidth = strokeWidth
     }
 
@@ -38,7 +42,7 @@ public extension Line {
 extension Line: Shape {
 
     public var xml: String {
-        return "<line x1=\"\(start.x)\" y1=\"\(start.y)\" x2=\"\(end.x)\" y2=\"\(end.y)\" stroke=\"black\" stroke-width=\"\(strokeWidth)\" />"
+        return "<line x1=\"\(start.x)\" y1=\"\(start.y)\" x2=\"\(end.x)\" y2=\"\(end.y)\" stroke=\"\(stroke.hexString())\" stroke-width=\"\(strokeWidth)\" />"
     }
     
 }

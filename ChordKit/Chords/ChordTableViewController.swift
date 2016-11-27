@@ -26,6 +26,7 @@ class ChordTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        navigationItem.title = "Chords"
         tableView.dataSource = self
         tableView.delegate = self
         data = ChordTableViewSection.from(JSONArrayNamed: "Defaults")

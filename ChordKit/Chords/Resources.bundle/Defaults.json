@@ -1,40 +1,84 @@
 [
     {
-        "title": "Section Title 1",
+        "title": "CAGED Chords (major)",
         "rows": [
             {
-                "title": "Row Title 1",
-                "chord": "x-x23x"
+                "title": "E",
+                "scale": "10r-22-32r-41-50-60r"
             },
             {
-                "title": "Row Title 2",
-                "scale": "22r-44b"
+                "title": "D",
+                "scale": "1-2-30r-42-53r-62"
+            },
+            {
+                "title": "C",
+                "scale": "1-23r-32-40-51r-60"
+            },
+            {
+                "title": "A",
+                "scale": "1-20r-32-42r-52-60"
+            },
+            {
+                "title": "G",
+                "scale": "13r-22-30-40r-50-63r"
             }
         ]
     },
     {
-        "title": "Section Title 2",
+        "title": "CAGED Chords (minor)",
         "rows": [
             {
-                "title": "Row Title 1",
-                "chord": "x-x23x"
+                "title": "Em",
+                "scale": "10r-22-32r-40-50-60r"
             },
             {
-                "title": "Row Title 2",
-                "scale": "22r-3-10-44b"
+                "title": "Dm",
+                "scale": "30r-42-53r-61"
+            },
+            {
+                "title": "Cm",
+                "scale": "23r-31-40-51r"
+            },
+            {
+                "title": "Am",
+                "scale": "20r-32-42r-51-60"
+            },
+            {
+                "title": "Gm",
+                "scale": "13r-21-30-40r"
             }
         ]
     },
     {
-        "title": "Section Title 3",
+        "title": "CAGED Chords (7)",
         "rows": [
             {
-                "title": "Row Title 1",
-                "chord": "x-x23x"
+                "title": "E7",
+                "scale": "10r-22-30-41-50-60r"
             },
             {
-                "title": "Row Title 2",
-                "scale": "22r-44b"
+                "title": "E7 (variation)",
+                "scale": "10r-22-30-41-53-60r"
+            },
+            {
+                "title": "D7",
+                "scale": "30r-42-51-62"
+            },
+            {
+                "title": "C7",
+                "scale": "23r-32-43-51r"
+            },
+            {
+                "title": "C7 (variation)",
+                "scale": "32-43-51r-63"
+            },
+            {
+                "title": "A7",
+                "scale": "20r-32-40-52-60"
+            },
+            {
+                "title": "G7",
+                "scale": "13r-22-30-40r-50-61"
             }
         ]
     }

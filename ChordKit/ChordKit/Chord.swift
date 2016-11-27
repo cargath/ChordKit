@@ -6,6 +6,8 @@
 //  Copyright © 2016 cargath. All rights reserved.
 //
 
+import UIKit
+
 public struct Chord {
 
     public let name: String
@@ -61,16 +63,16 @@ public extension Chord {
 
         let radius = colWidth / 2 - strokeWidth
 
-        let start = Point(colWidth, rowHeight * topOffset)
+        let start = Point(colWidth, rowHeight * topOffset + strokeWidth / 2)
         let end = Point(width - colWidth, height)
 
         var shapes: [Shape] = []
 
         // SVG header
-        shapes.append(SVG(width: width, height: height + strokeWidth / 2))
+        shapes.append(SVG(width: width, height: height + strokeWidth))
 
         // Title
-        if (name.characters.count > 0) {
+        if name.characters.count > 0 {
             shapes.append(Text(coord: Point(start.x + colWidth, rowHeight - radius), size: radius * 2, text: name))
         }
 
@@ -79,6 +81,7 @@ public extension Chord {
             shapes.append(Line(
                 start: Point(start.x, start.y + rowHeight * i),
                 end: Point(end.x, start.y + rowHeight * i),
+                stroke: UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1.0),
                 strokeWidth: i > 0 ? strokeWidth : strokeWidth * 2
             ))
         }
@@ -87,8 +90,9 @@ public extension Chord {
         for i in 0 ... cols - 2 {
             shapes.append(Line(
                 start: Point(start.x + colWidth * i, start.y - strokeWidth),
-                end: Point(start.x + colWidth * i, end.y + strokeWidth / 2),
-                strokeWidth: strokeWidth
+                end: Point(start.x + colWidth * i, end.y + rowHeight / 2),
+                stroke: UIColor(red: 0.25, green: 0.25, blue: 0.25, alpha: 1.0),
+                strokeWidth: strokeWidth + (cols - 2 - i)
             ))
         }
 
